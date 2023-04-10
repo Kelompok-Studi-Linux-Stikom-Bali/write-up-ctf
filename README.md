@@ -1,2 +1,3 @@
-# Tentang Repository
-Repository ini berisi write-up ctf yang kami ikuti dan kumpulkan dari lomba lomba CTF sebagai sumber pembelajaran cyber security.
+# KSL CTF Write Ups
+
+Repositori ini memuat sekumpulan write up CTF yang diikuti oleh anggota Kelompok Studi Linux STIKOM Bali. Tujuan pembuatan repositori ini adalah sebagai arsip publik dan referensi pembelajaran dan pelatihan untuk CTF berikutnya.
