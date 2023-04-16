@@ -1,0 +1,86 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+(() => {
+var exports = {};
+exports.id = "pages/viewer/[...slug]";
+exports.ids = ["pages/viewer/[...slug]"];
+exports.modules = {
+
+/***/ "./src/components/pdf-viewer.tsx":
+/*!***************************************!*\
+  !*** ./src/components/pdf-viewer.tsx ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var react_pdf__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-pdf */ \"react-pdf\");\n/* harmony import */ var react_pdf__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_pdf__WEBPACK_IMPORTED_MODULE_2__);\n\n\n\nfunction PdfViewer({ pdfUrl  }) {\n    react_pdf__WEBPACK_IMPORTED_MODULE_2__.pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${react_pdf__WEBPACK_IMPORTED_MODULE_2__.pdfjs.version}/pdf.worker.js`;\n    const [numPages, setNumPages] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(null);\n    const [pageNumber, setPageNumber] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(1);\n    function onDocumentLoadSuccess({ numPages  }) {\n        setNumPages(numPages);\n    }\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n        className: \"flex flex-col items-center\",\n        children: [\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(react_pdf__WEBPACK_IMPORTED_MODULE_2__.Document, {\n                className: \"border-2 border-black px-10\",\n                options: {\n                    margin: [\n                        0,\n                        0,\n                        0,\n                        0\n                    ],\n                    cMapUrl: \"cmaps/\"\n                },\n                file: `/write-up-ctf/${pdfUrl}`,\n                onLoadSuccess: onDocumentLoadSuccess,\n                children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(react_pdf__WEBPACK_IMPORTED_MODULE_2__.Page, {\n                    pageNumber: pageNumber,\n                    renderTextLayer: false,\n                    renderAnnotationLayer: false\n                }, void 0, false, {\n                    fileName: \"/Users/ekajaya740/Documents/KSL/write-up-ctf/src/components/pdf-viewer.tsx\",\n                    lineNumber: 28,\n                    columnNumber: 9\n                }, this)\n            }, void 0, false, {\n                fileName: \"/Users/ekajaya740/Documents/KSL/write-up-ctf/src/components/pdf-viewer.tsx\",\n                lineNumber: 20,\n                columnNumber: 7\n            }, this),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                className: \"flex fixed p-10 bottom-0 space-x-4 w-full justify-center\",\n                children: [\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"button\", {\n                        onClick: ()=>{\n                            if (pageNumber !== null && pageNumber > 1) {\n                                setPageNumber(pageNumber !== null ? pageNumber - 1 : 1);\n                            }\n                        },\n                        children: \"Prev\"\n                    }, void 0, false, {\n                        fileName: \"/Users/ekajaya740/Documents/KSL/write-up-ctf/src/components/pdf-viewer.tsx\",\n                        lineNumber: 35,\n                        columnNumber: 9\n                    }, this),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"p\", {\n                        children: [\n                            \"Page \",\n                            pageNumber,\n                            \" of \",\n                            numPages\n                        ]\n                    }, void 0, true, {\n                        fileName: \"/Users/ekajaya740/Documents/KSL/write-up-ctf/src/components/pdf-viewer.tsx\",\n                        lineNumber: 43,\n                        columnNumber: 9\n                    }, this),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"button\", {\n                        onClick: ()=>{\n                            if (pageNumber !== null && pageNumber < (numPages !== null ? numPages : 1)) {\n                                setPageNumber(pageNumber !== null ? pageNumber + 1 : 1);\n                            }\n                        },\n                        children: \"Next\"\n                    }, void 0, false, {\n                        fileName: \"/Users/ekajaya740/Documents/KSL/write-up-ctf/src/components/pdf-viewer.tsx\",\n                        lineNumber: 47,\n                        columnNumber: 9\n                    }, this)\n                ]\n            }, void 0, true, {\n                fileName: \"/Users/ekajaya740/Documents/KSL/write-up-ctf/src/components/pdf-viewer.tsx\",\n                lineNumber: 34,\n                columnNumber: 7\n            }, this)\n        ]\n    }, void 0, true, {\n        fileName: \"/Users/ekajaya740/Documents/KSL/write-up-ctf/src/components/pdf-viewer.tsx\",\n        lineNumber: 19,\n        columnNumber: 5\n    }, this);\n}\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (PdfViewer);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvY29tcG9uZW50cy9wZGYtdmlld2VyLnRzeC5qcyIsIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7OztBQUN3QztBQUNVO0FBTWxELFNBQVNLLFVBQVUsRUFBRUMsT0FBTSxFQUFTLEVBQUU7SUFDcENGLDBFQUFtQyxHQUFHLENBQUMsd0NBQXdDLEVBQUVBLG9EQUFhLENBQUMsY0FBYyxDQUFDO0lBQzlHLE1BQU0sQ0FBQ00sVUFBVUMsWUFBWSxHQUFHViwrQ0FBUUEsQ0FBZ0IsSUFBSTtJQUM1RCxNQUFNLENBQUNXLFlBQVlDLGNBQWMsR0FBR1osK0NBQVFBLENBQUM7SUFFN0MsU0FBU2Esc0JBQXNCLEVBQUVKLFNBQVEsRUFBd0IsRUFBRTtRQUNqRUMsWUFBWUQ7SUFDZDtJQUVBLHFCQUNFLDhEQUFDSztRQUFJQyxXQUFVOzswQkFDYiw4REFBQ2QsK0NBQVFBO2dCQUNQYyxXQUFVO2dCQUNWQyxTQUFTO29CQUNQQyxRQUFRO3dCQUFDO3dCQUFHO3dCQUFHO3dCQUFHO3FCQUFFO29CQUNwQkMsU0FBUztnQkFDWDtnQkFDQUMsTUFBTSxDQUFDLGNBQWMsRUFBRWQsT0FBTyxDQUFDO2dCQUMvQmUsZUFBZVA7MEJBQ2YsNEVBQUNYLDJDQUFJQTtvQkFDSFMsWUFBWUE7b0JBQ1pVLGlCQUFpQixLQUFLO29CQUN0QkMsdUJBQXVCLEtBQUs7Ozs7Ozs7Ozs7OzBCQUdoQyw4REFBQ1I7Z0JBQUlDLFdBQVU7O2tDQUNiLDhEQUFDUTt3QkFDQ0MsU0FBUyxJQUFNOzRCQUNiLElBQUliLGVBQWUsSUFBSSxJQUFJQSxhQUFhLEdBQUc7Z0NBQ3pDQyxjQUFjRCxlQUFlLElBQUksR0FBR0EsYUFBYSxJQUFJLENBQUM7NEJBQ3hELENBQUM7d0JBQ0g7a0NBQUc7Ozs7OztrQ0FHTCw4REFBQ2M7OzRCQUFFOzRCQUNLZDs0QkFBVzs0QkFBS0Y7Ozs7Ozs7a0NBR3hCLDhEQUFDYzt3QkFDQ0MsU0FBUyxJQUFNOzRCQUNiLElBQ0ViLGVBQWUsSUFBSSxJQUNuQkEsYUFBY0YsQ0FBQUEsYUFBYSxJQUFJLEdBQUdBLFdBQVcsQ0FBQyxHQUM5QztnQ0FDQUcsY0FBY0QsZUFBZSxJQUFJLEdBQUdBLGFBQWEsSUFBSSxDQUFDOzRCQUN4RCxDQUFDO3dCQUNIO2tDQUFHOzs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFNYjtBQUVBLGlFQUFlUCxTQUFTQSxFQUFDIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vd3JpdGUtdXAtY3RmLy4vc3JjL2NvbXBvbmVudHMvcGRmLXZpZXdlci50c3g/NDE1NiJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgZ2V0Q29uZmlnIGZyb20gJ25leHQvY29uZmlnJztcbmltcG9ydCBSZWFjdCwgeyB1c2VTdGF0ZSB9IGZyb20gJ3JlYWN0JztcbmltcG9ydCB7IERvY3VtZW50LCBQYWdlLCBwZGZqcyB9IGZyb20gJ3JlYWN0LXBkZic7XG5cbmludGVyZmFjZSBQcm9wcyB7XG4gIHBkZlVybDogc3RyaW5nO1xufVxuXG5mdW5jdGlvbiBQZGZWaWV3ZXIoeyBwZGZVcmwgfTogUHJvcHMpIHtcbiAgcGRmanMuR2xvYmFsV29ya2VyT3B0aW9ucy53b3JrZXJTcmMgPSBgLy9jZG5qcy5jbG91ZGZsYXJlLmNvbS9hamF4L2xpYnMvcGRmLmpzLyR7cGRmanMudmVyc2lvbn0vcGRmLndvcmtlci5qc2A7XG4gIGNvbnN0IFtudW1QYWdlcywgc2V0TnVtUGFnZXNdID0gdXNlU3RhdGU8bnVtYmVyIHwgbnVsbD4obnVsbCk7XG4gIGNvbnN0IFtwYWdlTnVtYmVyLCBzZXRQYWdlTnVtYmVyXSA9IHVzZVN0YXRlKDEpO1xuXG4gIGZ1bmN0aW9uIG9uRG9jdW1lbnRMb2FkU3VjY2Vzcyh7IG51bVBhZ2VzIH06IHsgbnVtUGFnZXM6IG51bWJlciB9KSB7XG4gICAgc2V0TnVtUGFnZXMobnVtUGFnZXMpO1xuICB9XG5cbiAgcmV0dXJuIChcbiAgICA8ZGl2IGNsYXNzTmFtZT0nZmxleCBmbGV4LWNvbCBpdGVtcy1jZW50ZXInPlxuICAgICAgPERvY3VtZW50XG4gICAgICAgIGNsYXNzTmFtZT0nYm9yZGVyLTIgYm9yZGVyLWJsYWNrIHB4LTEwJ1xuICAgICAgICBvcHRpb25zPXt7XG4gICAgICAgICAgbWFyZ2luOiBbMCwgMCwgMCwgMF0sXG4gICAgICAgICAgY01hcFVybDogJ2NtYXBzLycsXG4gICAgICAgIH19XG4gICAgICAgIGZpbGU9e2Avd3JpdGUtdXAtY3RmLyR7cGRmVXJsfWB9XG4gICAgICAgIG9uTG9hZFN1Y2Nlc3M9e29uRG9jdW1lbnRMb2FkU3VjY2Vzc30+XG4gICAgICAgIDxQYWdlXG4gICAgICAgICAgcGFnZU51bWJlcj17cGFnZU51bWJlcn1cbiAgICAgICAgICByZW5kZXJUZXh0TGF5ZXI9e2ZhbHNlfVxuICAgICAgICAgIHJlbmRlckFubm90YXRpb25MYXllcj17ZmFsc2V9XG4gICAgICAgIC8+XG4gICAgICA8L0RvY3VtZW50PlxuICAgICAgPGRpdiBjbGFzc05hbWU9J2ZsZXggZml4ZWQgcC0xMCBib3R0b20tMCBzcGFjZS14LTQgdy1mdWxsIGp1c3RpZnktY2VudGVyJz5cbiAgICAgICAgPGJ1dHRvblxuICAgICAgICAgIG9uQ2xpY2s9eygpID0+IHtcbiAgICAgICAgICAgIGlmIChwYWdlTnVtYmVyICE9PSBudWxsICYmIHBhZ2VOdW1iZXIgPiAxKSB7XG4gICAgICAgICAgICAgIHNldFBhZ2VOdW1iZXIocGFnZU51bWJlciAhPT0gbnVsbCA/IHBhZ2VOdW1iZXIgLSAxIDogMSk7XG4gICAgICAgICAgICB9XG4gICAgICAgICAgfX0+XG4gICAgICAgICAgUHJldlxuICAgICAgICA8L2J1dHRvbj5cbiAgICAgICAgPHA+XG4gICAgICAgICAgUGFnZSB7cGFnZU51bWJlcn0gb2Yge251bVBhZ2VzfVxuICAgICAgICA8L3A+XG5cbiAgICAgICAgPGJ1dHRvblxuICAgICAgICAgIG9uQ2xpY2s9eygpID0+IHtcbiAgICAgICAgICAgIGlmIChcbiAgICAgICAgICAgICAgcGFnZU51bWJlciAhPT0gbnVsbCAmJlxuICAgICAgICAgICAgICBwYWdlTnVtYmVyIDwgKG51bVBhZ2VzICE9PSBudWxsID8gbnVtUGFnZXMgOiAxKVxuICAgICAgICAgICAgKSB7XG4gICAgICAgICAgICAgIHNldFBhZ2VOdW1iZXIocGFnZU51bWJlciAhPT0gbnVsbCA/IHBhZ2VOdW1iZXIgKyAxIDogMSk7XG4gICAgICAgICAgICB9XG4gICAgICAgICAgfX0+XG4gICAgICAgICAgTmV4dFxuICAgICAgICA8L2J1dHRvbj5cbiAgICAgIDwvZGl2PlxuICAgIDwvZGl2PlxuICApO1xufVxuXG5leHBvcnQgZGVmYXVsdCBQZGZWaWV3ZXI7XG4iXSwibmFtZXMiOlsiUmVhY3QiLCJ1c2VTdGF0ZSIsIkRvY3VtZW50IiwiUGFnZSIsInBkZmpzIiwiUGRmVmlld2VyIiwicGRmVXJsIiwiR2xvYmFsV29ya2VyT3B0aW9ucyIsIndvcmtlclNyYyIsInZlcnNpb24iLCJudW1QYWdlcyIsInNldE51bVBhZ2VzIiwicGFnZU51bWJlciIsInNldFBhZ2VOdW1iZXIiLCJvbkRvY3VtZW50TG9hZFN1Y2Nlc3MiLCJkaXYiLCJjbGFzc05hbWUiLCJvcHRpb25zIiwibWFyZ2luIiwiY01hcFVybCIsImZpbGUiLCJvbkxvYWRTdWNjZXNzIiwicmVuZGVyVGV4dExheWVyIiwicmVuZGVyQW5ub3RhdGlvbkxheWVyIiwiYnV0dG9uIiwib25DbGljayIsInAiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./src/components/pdf-viewer.tsx\n");
+
+/***/ }),
+
+/***/ "./src/pages/viewer/[...slug].tsx":
+/*!****************************************!*\
+  !*** ./src/pages/viewer/[...slug].tsx ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_pdf_viewer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/components/pdf-viewer */ \"./src/components/pdf-viewer.tsx\");\n/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/router */ \"next/router\");\n/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);\n\n\n\n\nconst Index = ()=>{\n    const router = (0,next_router__WEBPACK_IMPORTED_MODULE_2__.useRouter)();\n    const { slug  } = router.query;\n    const [pdfUrl, setPdfUrl] = (0,react__WEBPACK_IMPORTED_MODULE_3__.useState)(\"\");\n    const [numPages, setNumPages] = (0,react__WEBPACK_IMPORTED_MODULE_3__.useState)(null);\n    const [pageNumber, setPageNumber] = (0,react__WEBPACK_IMPORTED_MODULE_3__.useState)(1);\n    console.log(Array.isArray(slug) ? slug.join(\"/\") : slug ?? \"\");\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_components_pdf_viewer__WEBPACK_IMPORTED_MODULE_1__[\"default\"], {\n        pdfUrl: Array.isArray(slug) ? slug.join(\"/\") : slug ?? \"\"\n    }, void 0, false, {\n        fileName: \"/Users/ekajaya740/Documents/KSL/write-up-ctf/src/pages/viewer/[...slug].tsx\",\n        lineNumber: 16,\n        columnNumber: 5\n    }, undefined);\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Index);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvcGFnZXMvdmlld2VyL1suLi5zbHVnXS50c3guanMiLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7O0FBQWdEO0FBQ1I7QUFDVztBQUVuRCxNQUFNSSxRQUFRLElBQU07SUFDbEIsTUFBTUMsU0FBU0osc0RBQVNBO0lBQ3hCLE1BQU0sRUFBRUssS0FBSSxFQUFFLEdBQUdELE9BQU9FLEtBQUs7SUFFN0IsTUFBTSxDQUFDQyxRQUFRQyxVQUFVLEdBQUdOLCtDQUFRQSxDQUFTO0lBQzdDLE1BQU0sQ0FBQ08sVUFBVUMsWUFBWSxHQUFHUiwrQ0FBUUEsQ0FBZ0IsSUFBSTtJQUM1RCxNQUFNLENBQUNTLFlBQVlDLGNBQWMsR0FBR1YsK0NBQVFBLENBQUM7SUFFN0NXLFFBQVFDLEdBQUcsQ0FBQ0MsTUFBTUMsT0FBTyxDQUFDWCxRQUFRQSxLQUFLWSxJQUFJLENBQUMsT0FBT1osUUFBUSxFQUFFO0lBRTdELHFCQUNFLDhEQUFDTiw4REFBU0E7UUFBQ1EsUUFBUVEsTUFBTUMsT0FBTyxDQUFDWCxRQUFRQSxLQUFLWSxJQUFJLENBQUMsT0FBT1osUUFBUSxFQUFFOzs7Ozs7QUFFeEU7QUFFQSxpRUFBZUYsS0FBS0EsRUFBQyIsInNvdXJjZXMiOlsid2VicGFjazovL3dyaXRlLXVwLWN0Zi8uL3NyYy9wYWdlcy92aWV3ZXIvWy4uLnNsdWddLnRzeD9lMTQ0Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBQZGZWaWV3ZXIgZnJvbSAnQC9jb21wb25lbnRzL3BkZi12aWV3ZXInO1xuaW1wb3J0IHsgdXNlUm91dGVyIH0gZnJvbSAnbmV4dC9yb3V0ZXInO1xuaW1wb3J0IFJlYWN0LCB7IHVzZUVmZmVjdCwgdXNlU3RhdGUgfSBmcm9tICdyZWFjdCc7XG5cbmNvbnN0IEluZGV4ID0gKCkgPT4ge1xuICBjb25zdCByb3V0ZXIgPSB1c2VSb3V0ZXIoKTtcbiAgY29uc3QgeyBzbHVnIH0gPSByb3V0ZXIucXVlcnk7XG5cbiAgY29uc3QgW3BkZlVybCwgc2V0UGRmVXJsXSA9IHVzZVN0YXRlPHN0cmluZz4oJycpO1xuICBjb25zdCBbbnVtUGFnZXMsIHNldE51bVBhZ2VzXSA9IHVzZVN0YXRlPG51bWJlciB8IG51bGw+KG51bGwpO1xuICBjb25zdCBbcGFnZU51bWJlciwgc2V0UGFnZU51bWJlcl0gPSB1c2VTdGF0ZSgxKTtcblxuICBjb25zb2xlLmxvZyhBcnJheS5pc0FycmF5KHNsdWcpID8gc2x1Zy5qb2luKCcvJykgOiBzbHVnID8/ICcnKTtcblxuICByZXR1cm4gKFxuICAgIDxQZGZWaWV3ZXIgcGRmVXJsPXtBcnJheS5pc0FycmF5KHNsdWcpID8gc2x1Zy5qb2luKCcvJykgOiBzbHVnID8/ICcnfSAvPlxuICApO1xufTtcblxuZXhwb3J0IGRlZmF1bHQgSW5kZXg7XG4iXSwibmFtZXMiOlsiUGRmVmlld2VyIiwidXNlUm91dGVyIiwiUmVhY3QiLCJ1c2VTdGF0ZSIsIkluZGV4Iiwicm91dGVyIiwic2x1ZyIsInF1ZXJ5IiwicGRmVXJsIiwic2V0UGRmVXJsIiwibnVtUGFnZXMiLCJzZXROdW1QYWdlcyIsInBhZ2VOdW1iZXIiLCJzZXRQYWdlTnVtYmVyIiwiY29uc29sZSIsImxvZyIsIkFycmF5IiwiaXNBcnJheSIsImpvaW4iXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./src/pages/viewer/[...slug].tsx\n");
+
+/***/ }),
+
+/***/ "next/router":
+/*!******************************!*\
+  !*** external "next/router" ***!
+  \******************************/
+/***/ ((module) => {
+
+module.exports = require("next/router");
+
+/***/ }),
+
+/***/ "react":
+/*!************************!*\
+  !*** external "react" ***!
+  \************************/
+/***/ ((module) => {
+
+module.exports = require("react");
+
+/***/ }),
+
+/***/ "react-pdf":
+/*!****************************!*\
+  !*** external "react-pdf" ***!
+  \****************************/
+/***/ ((module) => {
+
+module.exports = require("react-pdf");
+
+/***/ }),
+
+/***/ "react/jsx-dev-runtime":
+/*!****************************************!*\
+  !*** external "react/jsx-dev-runtime" ***!
+  \****************************************/
+/***/ ((module) => {
+
+module.exports = require("react/jsx-dev-runtime");
+
+/***/ })
+
+};
+;
+
+// load runtime
+var __webpack_require__ = require("../../webpack-runtime.js");
+__webpack_require__.C(exports);
+var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
+var __webpack_exports__ = (__webpack_exec__("./src/pages/viewer/[...slug].tsx"));
+module.exports = __webpack_exports__;
+
+})();
