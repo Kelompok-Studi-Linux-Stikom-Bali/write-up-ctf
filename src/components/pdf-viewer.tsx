@@ -16,7 +16,7 @@ function PdfViewer({ pdfUrl }: Props) {
   }
 
   return (
-    <div className='flex flex-col items-center'>
+    <div className='flex justify-center py-6'>
       <Document
         className='border-2 border-black px-10'
         options={{
