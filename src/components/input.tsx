@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import { ChangeEvent, ReactNode } from 'react';
 import { IconContext } from 'react-icons';
 
 export interface IInput {
@@ -6,11 +6,12 @@ export interface IInput {
   placeholder: string;
   type: string;
   icon?: ReactNode;
+  onChange?: (e: ChangeEvent<HTMLInputElement>) => void;
 }
 
 const Input = (props: IInput) => {
   return (
-    <div className='flex flex-col space-y-1 '>
+    <div className='flex flex-col space-y-1 w-full'>
       <div className='relative'>
         <IconContext.Provider
           value={{
@@ -22,6 +23,7 @@ const Input = (props: IInput) => {
         <input
           type={props.type}
           placeholder={props.placeholder}
+          onChange={props.onChange}
           className='border-2 border-black rounded-md px-8 py-3 w-full focus:outline-none focus:border-blue-400'
         />
       </div>
