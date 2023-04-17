@@ -64,6 +64,7 @@ const Home: React.FC<Props> = ({ pdfs }) => {
           <ul className='grid lg:grid-cols-3 gap-3 md:grid-cols-2 grid-cols-1'>
             {search.map((pdf) => (
               <WriteupCardItems
+                key={pdf}
                 {...{
                   pdf: pdf,
                 }}
