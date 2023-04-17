@@ -4,9 +4,12 @@ import Link from 'next/link';
 import path from 'path';
 import { getFilesRecursively } from '@/utils/pdfutils';
 import Chips from '@/components/chips';
-import { VscFilePdf } from 'react-icons/vsc';
+import { VscEye, VscFilePdf, VscSearch } from 'react-icons/vsc';
 import { RiFileDownloadFill } from 'react-icons/ri';
 import { isInteger } from '@/utils/isInteger';
+import NavBar from '@/components/navbar';
+import Input from '@/components/input';
+import WriteupCardItems from '@/components/writeup-card-items';
 
 interface Props {
   pdfs: string[];
@@ -14,54 +17,34 @@ interface Props {
 
 const Home: React.FC<Props> = ({ pdfs }) => {
   return (
-    <main className='p-4 lg:p-0'>
-      <div className='container mx-auto space-y-6'>
-        <h1>Daftar Writeup CTF</h1>
-        <ul className='grid lg:grid-cols-3 gap-3 md:grid-cols-2 grid-cols-1'>
-          {pdfs.map((pdf) => (
-            <div
-              key={pdf}
-              className='border-2 p-3 rounded-md border-black hover:bg-gray-200 space-y-2 flex flex-col justify-between'>
-              <div className='flex space-x-1'>
-                {isInteger(pdf.split('/')[1]) ? (
-                  <Chips
-                    {...{
-                      text: pdf.split('/')[1].toUpperCase(),
-                      className: 'bg-blue-400 text-white border border-black',
-                    }}
-                  />
-                ) : (
-                  <></>
-                )}
-                <Chips
-                  {...{
-                    text: pdf.split('/')[0].toUpperCase(),
-                    className: 'bg-purple-400 text-white border border-black',
-                  }}
-                />
-              </div>
-              <h2 className='line-clamp-3'>{pdf}</h2>
-              <div className='flex space-x-2 justify-stretch'>
-                <Link
-                  href={`/viewer/writeups/${pdf}`}
-                  target='_blank'
-                  className='bg-red-400 p-1 text-white flex space-x-1 items-center rounded-md px-3'>
-                  <VscFilePdf className='text-xl' />
-                  <p className='font-bold'>View PDF</p>
-                </Link>
-                <Link
-                  href={`/writeups/${pdf}`}
-                  target='_blank'
-                  className='bg-blue-400 p-1 text-white flex space-x-1 items-center rounded-md px-3'>
-                  <RiFileDownloadFill className='text-xl' />
-                  <p className='font-bold'>Download PDF</p>
-                </Link>
-              </div>
-            </div>
-          ))}
-        </ul>
-      </div>
-    </main>
+    <>
+      <header className='sticky top-0 z-10'>
+        <NavBar />
+      </header>
+      <main className='p-4 lg:p-0'>
+        <div className='container mx-auto space-y-6 md:py-10 py-4 w-full'>
+          <div className=''>
+            <Input
+              {...{
+                placeholder: 'Cari writeup',
+                label: 'Cari writeup',
+                type: 'text',
+                icon: <VscSearch className='px-1 ' rotate={180} />,
+              }}
+            />
+          </div>
+          <ul className='grid lg:grid-cols-3 gap-3 md:grid-cols-2 grid-cols-1'>
+            {pdfs.map((pdf) => (
+              <WriteupCardItems
+                {...{
+                  pdf,
+                }}
+              />
+            ))}
+          </ul>
+        </div>
+      </main>
+    </>
   );
 };
 
