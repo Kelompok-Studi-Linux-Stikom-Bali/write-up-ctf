@@ -52,9 +52,11 @@ const Home: React.FC<Props> = ({ pdfs }) => {
                     'g'
                   );
 
-                  if (searchRegex.test(e.target.value)) {
+                  if (searchRegex.test(e.target.value.toLowerCase())) {
                     setSearch(
-                      pdfs.filter((pdf) => pdf.match(searchRegex) !== null)
+                      pdfs.filter(
+                        (pdf) => pdf.toLowerCase().match(searchRegex) !== null
+                      )
                     );
                   }
                 },

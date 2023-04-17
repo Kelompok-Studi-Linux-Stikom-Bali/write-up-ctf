@@ -24,11 +24,7 @@ const Index = () => {
             xmlns='http://www.w3.org/2000/svg'
             viewBox='0 0 1024 768'
             version='1.1'>
-            <g
-              stroke='none'
-              stroke-width='1'
-              fill='#ffffff'
-              fill-rule='evenodd'>
+            <g stroke='none' strokeWidth='1' fill='#ffffff' fillRule='evenodd'>
               <g transform='translate(-54.000000, -30.000000)'>
                 <rect x='0' y='0' width='1024' height='768'></rect>
                 <path
