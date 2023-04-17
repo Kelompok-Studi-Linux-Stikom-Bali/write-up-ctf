@@ -20,14 +20,15 @@ const NavBar = (props: INavBar) => {
             <Image
               alt='logo KSL'
               src={'/write-up-ctf/logo.png'}
+              loading='eager'
               width={80}
               height={80}
-              className='pt-1'
+              className=''
             />
           </Link>
           <ul className='flex items-center md:space-x-8 space-x-2'>
-            {props.navItems.map((item) => (
-              <NavItems {...item} />
+            {props.navItems.map((item, index) => (
+              <NavItems {...item} key={index} />
             ))}
           </ul>
         </div>
