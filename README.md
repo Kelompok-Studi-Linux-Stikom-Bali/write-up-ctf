@@ -13,6 +13,6 @@ Repositori ini memuat sekumpulan write up CTF yang diikuti oleh anggota Kelompok
 3. Pergi ke folder dengan nama lomba yang di ikuti (Jika tidak ada tambahkan)
 4. Pergi ke folder tahun penyelenggaraan lomba (Jika tidak ada tambahkan)
 5. Push repositori
-6. Tuliskan pull request sesuai format yang diberikan di 
+6. Tuliskan pull request sesuai format yang diberikan di `.github/pull_request_template.md`
 
 Terima kasih 🐧
